@@ -134,7 +134,7 @@
       .then(response => response.text())
       .then(data => {
         const numero = data.split('\n')[0].trim();
-        const link = `https://wa.me/${numero}`;
+        const link = `https://wa.me/${numero}?text=Hola%2C%20quiero%20más%20información`;
         document.getElementById('whatsapp-btn').href = link;
       })
       .catch(error => {
